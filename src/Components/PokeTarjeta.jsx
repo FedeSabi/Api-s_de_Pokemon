@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const PokeTarjeta = (params) => {
   const [pokemon, setPokemon] = useState({});
-  const [imagen, setImagen] = useState("/public/img/pokeGif.gif");
+  const [imagen, setImagen] = useState("/img/pokeGif.gif");
   const [cardClass, setCardClass] = useState("d-none");
   const [loadClass, setLoadClass] = useState("");
 
@@ -20,7 +20,7 @@ const PokeTarjeta = (params) => {
       setPokemon(respuesta);
       const defaultImage =
         respuesta.sprites.other.dream_world.front_default ||
-        "/public/img/pokeGif.gif";
+        "/img/pokeGif.gif";
       setImagen(defaultImage);
       setCardClass("");
       setLoadClass("d-none");
@@ -32,7 +32,7 @@ const PokeTarjeta = (params) => {
   return (
     <Col sm="4" lg="3" className="mb-3">
       <Card className={`shadow border-4 border-warning ${loadClass}`}>
-        <CardImg src={imagen} height="200" className="p-3"></CardImg>
+        <CardImg src='/public/img/pokeGif.gif' height="200" className="p-3"></CardImg>
       </Card>
       <Card className={`shadow border-4 border-warning ${cardClass}`}>
         <CardImg src={imagen} height="150" className="p-2" />

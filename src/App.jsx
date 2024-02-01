@@ -1,6 +1,6 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom"
 import Index from './Views/Index.jsx'
-import Detalle from "./Views/Detalle.jsx"
+import Detalle from "./Views/Descripcion.jsx"
 
 function App() {
   return (
