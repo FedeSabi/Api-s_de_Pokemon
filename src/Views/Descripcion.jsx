@@ -1,5 +1,3 @@
-
-
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Container, Row, Col, Card, CardBody, CardText } from "reactstrap";
@@ -54,7 +52,7 @@ const Descripcion = () => {
               <Row>
                 <Col className="text-end">
                   <Link to="/" className="btn btn-warning">
-                    <i className="fa-solid fa-home"></i>Inicio
+                    <i className="fa-solid fa-home"></i>  Inicio
                   </Link>
                 </Col>
               </Row>
@@ -63,7 +61,6 @@ const Descripcion = () => {
                   <img src="/img/pokeGif.gif" alt="gif" className="w-100" />
                 </Col>
               </Row>
-
               <Row className={cardClass}>
                 <Col md="6" className="text-center">
                   <CardText className="h1 text-capitalize">
