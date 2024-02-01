@@ -45,10 +45,10 @@ const Descripcion = () => {
 
   return (
     <Container className="bg-danger mt-3">
-      <Row>
+      <Row className="mt-5">
         <Col>
           <Card className="shadow mt-3 mb-3">
-            <CardBody className="mt-3">
+            <CardBody className="mt-3 ">
               <Row>
                 <Col className="text-end">
                   <Link to="/" className="btn btn-warning">
