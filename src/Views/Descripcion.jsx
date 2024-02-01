@@ -58,7 +58,7 @@ const Descripcion = () => {
               </Row>
               <Row className={loadClass}>
                 <Col md="12">
-                  <img src="/img/pokeGif.gif" alt="gif" className="w-100" />
+                  <img src="/img/pokeGif.gif" alt="gif" className="w-100 h-20" />
                 </Col>
               </Row>
               <Row className={cardClass}>
