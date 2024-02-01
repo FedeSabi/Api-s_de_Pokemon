@@ -43,7 +43,7 @@ const PokeTarjeta = (params) => {
           <label className="fs-4 text-capitalize">{pokemon.name}</label>
         </CardBody>
         <CardFooter className="bg-warning">
-          <Link to={`/descripcion/${pokemon.id}`} className="btn btn-dark">
+          <Link to={`/pokemon/${pokemon.name}`} className="btn btn-dark">
             <i className="fa-solid fa-arrow-up-right-from-square"></i>{" "}
             Descripcion
           </Link>
