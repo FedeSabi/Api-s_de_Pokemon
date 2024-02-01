@@ -1,12 +1,19 @@
-import { Container, Row, Col, InputGroup, InputGroupText, Input } from "reactstrap";
+import {
+  Container,
+  Row,
+  Col,
+  InputGroup,
+  InputGroupText,
+  Input,
+} from "reactstrap";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import PokeTarjeta from '../Components/PokeTarjeta.jsx'
+import PokeTarjeta from "../Components/PokeTarjeta.jsx";
 
 const Index = () => {
   const [pokemones, setPokemones] = useState([]);
   const [offset, setOffset] = useState(0);
-  const [limit, setLimit] = useState(10);
+  const [limit, setLimit] = useState(12);
 
   useEffect(() => {
     getPokemones(offset);
@@ -27,14 +34,16 @@ const Index = () => {
     <Container className="shadow bg-danger mt-3">
       <Row>
         <Col>
-        <InputGroup className="mt-3 mb-3 shadow">
-        <InputGroupText><i className="fa-solid fa-search"></i></InputGroupText>
-        <Input placeholder="Buscar Pokemon"></Input>
-        </InputGroup>
+          <InputGroup className="mt-3 mb-3 shadow">
+            <InputGroupText>
+              <i className="fa-solid fa-search"></i>
+            </InputGroupText>
+            <Input placeholder="Buscar Pokemon"></Input>
+          </InputGroup>
         </Col>
       </Row>
       <Row className="mt-3">
-        { pokemones.map( (pok,i) => (
+        {pokemones.map((pok, i) => (
           <PokeTarjeta poke={pok} key={i} />
         ))}
       </Row>
